@@ -66,6 +66,16 @@ $ helm list
     Running in dry-run mode helps n validating the chart without installing it, while enabling debug outputs enabled verbose logs.
      $ helm install --debug --dry-run=client goodly-guppy .
 
-# $How do we upgrade an existing chart ? If the chart is not installed it installs the chart, if already installed, it upgrades the chart 
+# How do we upgrade an existing chart ? If the chart is not installed it installs the chart, if already installed, it upgrades the chart 
     $ helm upgrade --install <release-name> <chart-path>
-    
+    $  helm upgrade --install full-coral .
+
+# How to switch back the deployed helm chart to the previous revision ?
+    $ helm rollback <release-name> <revision> 
+
+# What is the purpose of values.yaml file in the helm chart ?
+    When parameterizing the charts, we supply the values in values.yaml in the root directory of the chart.
+    By default, helm is going to pick the values from the values.yaml.
+
+# Can't I have differnet names like prod.yaml and dev.yaml ?
+    You can absolutley have them! But you need to supply them using the -f fileName.yaml
