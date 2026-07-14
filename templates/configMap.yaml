@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: helm-demo-cm
 data:
-  player_initial_lives: {{ .Values.player_initial_lives }}
-  player_name: {{ .Values.player_name }}
-  ui_properties_file_name: {{ .Values.ui_properties_file_name }}
+  player_initial_lives: {{ .Values.player_initial_lives | quote }}
+  player_name: {{ .Values.player_name | quote }}
+  ui_properties_file_name: {{ .Values.ui_properties_file_name | quote }}
