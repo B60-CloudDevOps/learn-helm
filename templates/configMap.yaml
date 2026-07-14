@@ -7,4 +7,4 @@ data:
   player_name: {{ .Values.player_name | quote }}
   ui_properties_file_name: {{ .Values.ui_properties_file_name | quote }}
   env: {{ .Values.env | default "sandBox" | quote }}
-  value_from_chart: {{ .Chart.Name | quote }}
+  value_from_chart: {{ .Chart.Name }}
