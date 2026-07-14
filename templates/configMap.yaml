@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Release.Name }}-cm
+  name: helm-demo-cm
 data:
-  value: 60
+  player_initial_lives: "3"
+  player_name: "Toto"
+  ui_properties_file_name: "user-interface.properties"
