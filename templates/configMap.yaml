@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: helm-demo-cm
 data:
-  player_initial_lives: "3"
-  player_name: "Toto"
+  player_initial_lives: "5"
+  player_name: "Tototo"
   ui_properties_file_name: "user-interface.properties"

@@ -66,4 +66,6 @@ $ helm list
     Running in dry-run mode helps n validating the chart without installing it, while enabling debug outputs enabled verbose logs.
      $ helm install --debug --dry-run=client goodly-guppy .
 
-$ How do we upgrade an existing chart 
+# $How do we upgrade an existing chart ? If the chart is not installed it installs the chart, if already installed, it upgrades the chart 
+    $ helm upgrade --install <release-name> <chart-path>
+    
