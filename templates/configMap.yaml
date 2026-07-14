@@ -6,4 +6,4 @@ data:
   player_initial_lives: {{ .Values.player_initial_lives | quote }}
   player_name: {{ .Values.player_name | quote }}
   ui_properties_file_name: {{ .Values.ui_properties_file_name | quote }}
-  env: {{ .Values.env | quote }}
+  env: {{ .Values.env }}
