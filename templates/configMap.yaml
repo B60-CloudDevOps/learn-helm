@@ -8,4 +8,4 @@ data:
   ui_properties_file_name: {{ .Values.ui_properties_file_name | quote }}
   env: {{ .Values.env | default "sandBox" | quote }}
   value_from_chart: {{ .Chart.Name }}
-  value_from_subchart: {{ .subchart.sampe.fruit | default "default-fruit" | quote }}
+  value_from_subchart: {{ .subchart.sample.fruit | default "default-fruit" | quote }}
