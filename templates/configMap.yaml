@@ -11,3 +11,5 @@ data:
   value_from_subchart: "test"
   k8sMajorVersion: {{ .Capabilities.KubeVersion.Major }}
   k8sMinorVersion: {{ .Capabilities.KubeVersion.Minor }}
+  templatedUsed: {{ .Template.Name }}
+  templateBasePath: {{ .Template.BasePath }}
