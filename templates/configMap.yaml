@@ -13,3 +13,4 @@ data:
   k8sMinorVersion: {{ .Capabilities.KubeVersion.Minor }}
   templatedUsed: {{ .Template.Name }}
   templateBasePath: {{ .Template.BasePath }}
+  oldVersion: {{ quote .Chart.Name }}
