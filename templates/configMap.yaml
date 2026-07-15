@@ -9,3 +9,5 @@ data:
   env: {{ .Values.env | default "sandBox" | quote }}
   value_from_chart: {{ .Chart.Name }}
   value_from_subchart: "test"
+  k8sMajorVersion: {{ .Capabilities.KubeVersion.Major }}
+  k8sMinorVersion: {{ .Capabilities.KubeVersion.Minor }}
