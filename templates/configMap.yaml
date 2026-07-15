@@ -15,4 +15,4 @@ data:
   templateBasePath: {{ .Template.BasePath }}
   oldVersion: {{ .Chart.Name | upper | quote  }}
   helmLatestVersion: {{ .Capabilities.HelmVersion.Version }}
-  roboshopVersion: {{ .Values.roboshopVersion | quote }}
+  roboshopVersion: {{ .Values.roboshopVersion | default "1.0.0" | quote }}
