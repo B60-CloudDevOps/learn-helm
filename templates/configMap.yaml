@@ -16,3 +16,5 @@ data:
   oldVersion: {{ .Chart.Name | upper | quote  }}
   helmLatestVersion: {{ .Capabilities.HelmVersion.Version }}
   roboshopVersion: {{ .Values.roboshopVersion | default "1.0.0" | quote }}
+  anno: |
+    {{ (lookup "v1" "Namespace" "" "kube-system").metadata }}
